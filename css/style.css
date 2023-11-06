@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* max-width: 173.6rem; */
+	max-width: 173.6rem;
 	margin: 0 auto;
 	padding: 9.6rem 6.4rem 3.2rem 4.8rem;
 	font-size: 1.9rem;
@@ -80,6 +80,7 @@
 }
 .circle-box {
 	position: absolute;
+	top: 95%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
@@ -162,7 +163,10 @@
 /***************************/
 /* offert */
 /***************************/
+.offerts-box  {
 
+	justify-items: center;
+}
 .offert-box {
 	box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
 	transition: all 0.3s;
