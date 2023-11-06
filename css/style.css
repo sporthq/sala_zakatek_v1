@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 173.6rem;
+	/* max-width: 173.6rem; */
 	margin: 0 auto;
 	padding: 9.6rem 6.4rem 3.2rem 4.8rem;
 	font-size: 1.9rem;
