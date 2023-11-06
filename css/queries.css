@@ -29,14 +29,6 @@
 	.contact-info {
 		font-size: 1.55rem;
 	}
-    .offerts-box  {
-        /* grid-template-columns: 1fr 1fr; */
-        /* justify-items: center; */
-        column-gap: 0;
-    }
-
-
-   
 }
 
 @media (max-width: 80em) {
