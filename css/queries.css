@@ -170,6 +170,9 @@
 	.offert-box-header {
 		height: 19rem;
 	}
+	.offert-box-header img{
+		height: 100%
+	}
 	.footer {
 		padding-top: 0;
 	}
