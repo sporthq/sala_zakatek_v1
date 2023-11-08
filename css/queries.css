@@ -320,6 +320,10 @@
 		gap: 1.6rem;
 		padding-top: 0;
 	}
+
+	.circle-box img {
+		transform: translateX(1rem);
+	}
 	.offert-box-text--title {
 		font-size: 2.2rem;
 	}
