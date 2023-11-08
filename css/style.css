@@ -80,6 +80,7 @@
 }
 .circle-box {
 	position: absolute;
+	top: 95%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
@@ -113,11 +114,13 @@
 /***************************/
 
 .section-know-us {
-	padding-top: 9.6rem;
+	/* padding-top: 9.6rem; */
 }
 
 .know-us-box-img {
 	position: relative;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 }
 .know-us-box-text:hover .border-bottom-line {
@@ -162,8 +165,11 @@
 /***************************/
 /* offert */
 /***************************/
-
+.offerts-box {
+	justify-items: center;
+}
 .offert-box {
+	width: 100%;
 	box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
 	transition: all 0.3s;
 }
@@ -180,6 +186,7 @@
 
 .offert-box-header {
 	position: relative;
+	height: 22rem;
 }
 .offert-box-header img {
 	width: 100%;
@@ -265,7 +272,7 @@
 .grid-gallery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	
+
 	grid-gap: 2rem;
 }
 
@@ -409,7 +416,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 2rem;
-	min-width: 100rem;
+	min-width: 100%;
 }
 .form-contact-input,
 .form-contact-textarea {
@@ -433,7 +440,7 @@
 }
 
 .form-contact-btn {
-	width: 38%;
+	max-width: 200px;
 	font-size: 1.6rem;
 }
 
@@ -448,21 +455,15 @@
 }
 
 .footer-box {
-	/* display: flex;
-	justify-content: space-around;
-	width: 100%; */
-
 	display: grid;
-	grid-template-columns: auto 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	width: 100%;
-	max-width: 100rem;
-	/* text-align: center; */
+	/* max-width: 100rem; */
 }
 .footer-logo {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	/* justify-items: stretch; */
 }
 .footer-logo img {
 	max-width: 25.5rem;
@@ -476,32 +477,31 @@
 	font-weight: 700;
 	color: var(--colorPrimary);
 	text-decoration: none;
-	transition:  color .3s ;
+	transition: color 0.3s;
 }
 .footer-author:hover {
-	
 	color: var(--colorPrimaryLight);
-	
 }
 
 .footer-contact {
 	display: flex;
 	flex-direction: column;
-	justify-self: end;
+	justify-self: center;
 	margin-top: 3.2rem;
 }
 .footer-sitemap {
 	display: grid;
 	align-self: start;
 	margin-top: 3.2rem;
-
-	justify-items: end;
+	justify-self: center;
+	
 }
 
 .footer-contact-heading {
 	margin-bottom: 4rem;
 	font-size: 1.8rem;
 	font-weight: 500;
+	/* letter-spacing: .75px; */
 	text-transform: uppercase;
 }
 .footer-contact-box {
@@ -529,4 +529,7 @@
 .footer-link:hover,
 .footer-link:active {
 	color: var(--colorPrimary);
+}
+.footer-nav-mobile {
+	display: none;
 }

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/queries">
+    <link rel="stylesheet" href="css/queries.css">
     <title>Sala Weselna Zakątek </title>
 
 </head>
@@ -28,7 +28,9 @@
                 <li class="#contact"><a href="#contact" class="nav-list-item">Kontakt</a></li>
             </ul>
         </nav>
-
+        <div class="circle-box">
+            <img src="./img/logo_sala.png" alt="">
+        </div>
 
 
         <address class="contact-info">
@@ -36,6 +38,7 @@
                 <ion-icon class="icon-contact icon-adress" name="home"></ion-icon>
                 <span>Kozły 45 05-240 Tłuszcz</span>
             </p>
+
             <p>
                 <ion-icon class="icon-contact icon-phone" name="call"></ion-icon>
                 <a href="tel:604268073">+48 604-268-703</a>
@@ -47,9 +50,7 @@
     <main>
         <section class="section-hero padding-bottom-xl">
             <div class="hero-box">
-                <div class="circle-box">
-                    <img src="./img/logo_sala.png" alt="">
-                </div>
+
 
                 <img class="hero-img" src="./img/header_big_cut.jpg" alt="para młoda na przed kościołem">
 
@@ -57,7 +58,7 @@
             </div>
         </section>
 
-        <section id="about" class="section-know-us">
+        <section id="about" class="section-know-us padding-top-xl">
             <div class="container-xl ">
 
                 <div class="text-heading-box">
@@ -69,11 +70,11 @@
             </div>
             <div class=" container-xl grid grid--cols-2 ">
                 <!-- First Box  -->
-                <div class="know-us-box-img">
+                <div class="know-us-box-img test-2">
                     <img src="img/about_1.jpg" alt="zastawiony stół weselny">
                     <div class="shadow"></div>
                 </div>
-                <div class="know-us-box-text ">
+                <div class="know-us-box-text test">
                     <h3 class="heading-tertiary">o nas</h3>
                     <p class="know-us-description">Nasza mała firma jest pełna pasji <br> i zaangażowania, a każde
                         wydarzenie
@@ -125,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="container-xl grid grid--cols-3">
+            <div class="container-xl grid grid--cols-3 offerts-box">
                 <div class="offert-box">
                     <header class="offert-box-header">
                         <img src="img/offert_1.jpg" alt="">
@@ -236,7 +237,7 @@
                 </div>
             </div>
             <div class="container-xl">
-                <div class=" grid-gallery ">
+                <div class="grid-gallery ">
                     <figure class="grid-item grid-item--1">
 
                         <img class="gallery-image" src="img/inside/img_1.jpg" alt="">
@@ -336,7 +337,35 @@
                         </div>
 
                     </div>
-
+                    <div class="footer-nav-mobile">
+                        <ul class="footer-nav-mobile--list">
+                            <li class="footer-nav-mobile--item"><a href="#">
+                                    <!-- <ion-icon name="home-outline"></ion-icon> -->
+                                    <ion-icon   class="footer-nav-mobile--icon"  name="home"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer-nav-mobile--item"><a href="#offert">
+                                    <!-- <ion-icon name="home-outline"></ion-icon> -->
+                                    <ion-icon   class="footer-nav-mobile--icon"  name="home"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer-nav-mobile--item"><a href="#">
+                                    <!-- <ion-icon name="home-outline"></ion-icon> -->
+                                    <ion-icon    class="footer-nav-mobile--icon" name="home"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer-nav-mobile--item"><a href="#">
+                                    <!-- <ion-icon name="home-outline"></ion-icon> -->
+                                    <ion-icon   class="footer-nav-mobile--icon"  name="home"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer-nav-mobile--item"><a href="#">
+                                    <!-- <ion-icon name="home-outline"></ion-icon> -->
+                                    <ion-icon    class="footer-nav-mobile--icon" name="home"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="footer-contact">
                         <p class="footer-contact-heading">Kontakt</p>
                         <address class="footer-contact-box">
@@ -351,7 +380,7 @@
                         </address>
                     </div>
                     <nav class="footer-sitemap">
-                        <p class="footer-contact-heading">Sitemap</p>
+                        <p class="footer-contact-heading title-sitmap">Sitemap</p>
                         <ul class="footer-nav">
                             <li><a class="footer-link" href="#">Home</a></li>
                             <li><a class="footer-link" href="#about">O nas</a></li>
@@ -360,6 +389,7 @@
                             <li><a class="footer-link" href="#contact">Kontakt</a></li>
                         </ul>
                     </nav>
+
                 </div>
             </div>
         </footer>
