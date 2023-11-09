@@ -64,12 +64,11 @@ Medium:
 	box-sizing: border-box;
 }
 
-*:focus {
+a:focus {
 	outline: none;
-	
-	box-shadow: 0 0 0 8px rgba(241, 124, 125, .5)
-}
 
+	box-shadow: 0 0 0 1px rgba(241, 124, 125, 0.5);
+}
 
 html {
 	font-size: 62.5%;
@@ -81,7 +80,6 @@ body {
 	height: 100%;
 
 	font-size: 1.6rem;
-	
 }
 
 .container-xl {
@@ -94,13 +92,12 @@ body {
 
 .text-heading-box {
 	display: inline-block;
-
 }
 .subheading {
 	font-family: 'Dancing Script', cursive;
-	
+
 	font-size: 2.8rem;
-	
+
 	color: var(--colorPrimary);
 	text-transform: uppercase;
 }
@@ -163,7 +160,6 @@ body {
 	cursor: pointer;
 	overflow: hidden;
 	z-index: 1;
-
 }
 
 .btn::before {
@@ -187,16 +183,15 @@ body {
 	transform: translateY(0);
 }
 
-
-.padding-bottom-xl{
-	padding-bottom: 9.6rem !important
+.padding-bottom-xl {
+	padding-bottom: 9.6rem !important;
 }
-.padding-bottom-md{
-	padding-bottom: 6.4rem !important
+.padding-bottom-md {
+	padding-bottom: 6.4rem !important;
 }
 
-.padding-top-xl{
-	padding-top: 9.6rem !important
+.padding-top-xl {
+	padding-top: 9.6rem !important;
 }
 
 .order-1 {
