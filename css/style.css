@@ -98,6 +98,10 @@
 	max-width: 173.6rem;
 	margin: 0 auto;
 }
+.hero-socials-box {
+	display: none;
+
+}
 .circle-box {
 	position: absolute;
 	top: 95%;
@@ -403,6 +407,7 @@
 .arrow {
 	position: fixed;
 	top: 50%;
+	transform: translateY(-50%);
 	font-size: 2.8rem;
 	text-align: center;
 	color: #ccc;
@@ -446,11 +451,13 @@
 	padding: 14px 24px 15px 024px;
 	font-size: 1.6rem;
 	font-family: inherit;
+	border: 1px solid var(--colorGray)
 }
 .form-contact-input:focus,
 .form-contact-textarea:focus {
 	outline: none;
 	box-shadow: 0 5px 32px rgba(241, 124, 125, 0.17);
+	
 }
 .form-contact-textarea {
 	grid-column: 1/3;
@@ -554,4 +561,5 @@
 }
 .footer-nav-mobile {
 	display: none;
+	opacity: 0;
 }

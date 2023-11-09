@@ -64,6 +64,12 @@ Medium:
 	box-sizing: border-box;
 }
 
+*:focus {
+	outline: none;
+	
+	box-shadow: 0 0 0 8px rgba(241, 124, 125, .5)
+}
+
 
 html {
 	font-size: 62.5%;
