@@ -317,7 +317,7 @@
 	}
 	.header {
 		gap: 1.6rem;
-		padding-top: 0;
+		padding-top: 2.4rem;
 	}
 	.nav-mobile {
 		position: fixed;
@@ -351,7 +351,8 @@
 
 	.btn-mobile-nav {
 		position: absolute;
-		top: 2rem;
+	
+		top: -1rem;
 		display: block;
 		background: none;
 		border: none;
@@ -363,11 +364,11 @@
 		/* z-index: 14; */
 	}
 	.btn-menu-close {
-		right: 0;
+		right: -2rem;
 	}
 
 	.btn-mobile-nav-icon {
-		padding: 2rem;
+		padding: 2rem 3.2rem;
 		width: 3.2rem;
 		height: 3.2rem;
 		color: var(--colorGray);
