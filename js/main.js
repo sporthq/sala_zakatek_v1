@@ -11,6 +11,8 @@ const btnMenuOpen = document.querySelector('.btn-menu-open');
 const allLinks = document.querySelectorAll('.nav-list-item');
 const footerBox = document.querySelector('.footer-box');
 const navMobile = document.querySelector('.nav-mobile');
+const sections = document.querySelectorAll('section[id]');
+
 
 //gallery
 let imgIndex = 0;
@@ -101,27 +103,18 @@ document.addEventListener('scroll', function () {
 	}
 });
 
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.footer-nav-mobile a');
-
 function scrollActive() {
 	sections.forEach((current) => {
 		const sectionHeight = current.offsetHeight,
 			sectionTop = current.offsetTop - 50,
 			sectionId = current.getAttribute('id');
+			
 
+			console.log(scrollY);
 		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-			navLinks.forEach((navLink) => {
-				if (navLink.getAttribute('href').startsWith(' + sectionId + ') === true) {
-					navLink.classList.add('active-link');
-				} else {
-					navLink.classList.remove('active-link');
-				}
-			});
+			document.querySelector('.footer-nav-mobile a[href*=' + sectionId + ']').classList.add('active-link');
 		} else {
-			navLinks.forEach((navLink) => {
-				navLink.classList.remove('active-link');
-			});
+			document.querySelector('.footer-nav-mobile a[href*=' + sectionId + ']').classList.remove('active-link');
 		}
 	});
 }

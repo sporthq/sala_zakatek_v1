@@ -198,10 +198,3 @@ body {
 	order: 1;
 }
 
-.active-link .footer-nav-mobile--icon {
-	position: relative;
-	fill: var(--colorPrimaryDark);
-	transform: scale(1.05);
-	/* transition: transform .3s; */
-	
-}
