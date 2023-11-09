@@ -10,6 +10,7 @@ const btnCloseNav = document.querySelector('.btn-menu-close');
 const btnMenuOpen = document.querySelector('.btn-menu-open');
 const allLinks = document.querySelectorAll('.nav-list-item');
 const footerBox = document.querySelector('.footer-box');
+const navMobile = document.querySelector('.nav-mobile');
 
 //gallery
 let imgIndex = 0;
@@ -68,7 +69,7 @@ window.addEventListener('click', (e) => {
 btnCloseGallery.addEventListener('click', closeGallery);
 
 // menu-nav
-btnMenuOpen.addEventListener('click', () => {
+btnMenuOpen.addEventListener('click', (e) => {
 	header.classList.add('nav-open');
 });
 btnCloseNav.addEventListener('click', () => {
@@ -78,10 +79,13 @@ document.addEventListener('scroll', () => {
 	header.classList.remove('nav-open');
 });
 
-allLinks.forEach(function (link) {
-	link.addEventListener('click', (e) => {
-		header.classList.remove('nav-open');
-	});
+// close mobile-nav when clicked beyond nav
+document.addEventListener('click', (e) => {
+	if (header.classList.contains('nav-open')) {
+		if (!e.target.classList.contains('nav-mobile') && !e.target.classList.contains('btn-mobile-nav-icon')) {
+			header.classList.remove('nav-open');
+		}
+	}
 });
 
 const curYear = new Date().getFullYear();
@@ -89,11 +93,29 @@ yearEl.textContent = curYear;
 
 // menu-mobile-bottom
 document.addEventListener('scroll', function () {
-	if (scrollY > 20) {
+	if (scrollY > 37) {
 		footerBox.classList.add('open-footer-nav');
 	}
-	if (scrollY < 20) {
+	if (scrollY < 37) {
 		footerBox.classList.remove('open-footer-nav');
 	}
-	
 });
+
+const sections = document.querySelectorAll('section[id]');
+console.log(sections);
+function scrollActive() {
+	const scrollY = window.pageYOffset;
+
+	sections.forEach((current) => {
+		const sectionHeight = current.offsetHeight,
+			sectionTop = current.offsetTop - 50,
+			sectionId = current.getAttribute('id');
+
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+			document.querySelector('.footer-nav-mobile a[href*=' + sectionId + ']').classList.add('active-link');
+		} else {
+			document.querySelector('.footer-nav-mobile a[href*=' + sectionId + ']').classList.remove('active-link');
+		}
+	});
+}
+window.addEventListener('scroll', scrollActive);
