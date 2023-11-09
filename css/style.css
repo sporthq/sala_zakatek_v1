@@ -97,6 +97,9 @@
 	height: 28rem;
 	object-fit: cover;
 }
+.contact-info-description {
+	display: none;
+}
 .hero-img {
 	width: 100%;
 }

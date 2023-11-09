@@ -92,7 +92,7 @@
 	.container-xl {
 		max-width: 84rem;
 	}
-	
+
 	.know-us-description {
 		font-size: 2.2rem;
 	}
@@ -101,7 +101,6 @@
 	.btn:visited {
 		font-size: 1.6rem;
 	}
-
 }
 /* max-width: 850px */
 @media (max-width: 53em) {
@@ -170,21 +169,19 @@
 	.offert-box-header {
 		height: 19rem;
 	}
-	.offert-box-header img{
-		height: 100%
+	.offert-box-header img {
+		height: 100%;
 	}
 	.footer {
 		padding-top: 0;
 	}
 	.form-contact {
-		
 		padding-left: 3.2rem;
 		padding-right: 3.2rem;
 	}
 	.footer-box {
 		position: relative;
 		grid-template-columns: 1fr 1fr;
-		
 	}
 	.title-sitmap {
 		display: none;
@@ -230,12 +227,7 @@
 		font-size: 4.8rem;
 	}
 	.container-xl {
-		/* padding-left: 3.2rem; */
-		/* padding-right: 3.2rem; */
 		padding-bottom: 4.8rem;
-	}
-	.section-hero {
-		/* padding: 0 1.6rem; */
 	}
 
 	.hero-box img {
@@ -254,7 +246,7 @@
 	.contact-info {
 		font-size: 1.6rem;
 	}
-	
+
 	.grid--cols-2 {
 		grid-template-columns: 1fr;
 	}
@@ -270,7 +262,6 @@
 	}
 	.btn-contact {
 		margin-top: 3.2rem;
-	
 	}
 	.grid--cols-3 {
 		grid-template-columns: 1fr;
@@ -281,7 +272,7 @@
 	.grid-gallery {
 		grid-template-columns: 1fr;
 	}
-	
+
 	.form-contact-textarea {
 		grid-column: 1;
 	}
@@ -295,7 +286,6 @@
 	}
 	.grid-gallery figure {
 		max-height: 250px;
-	
 	}
 	.gallery-image {
 		object-fit: cover;
@@ -304,6 +294,12 @@
 
 /* max-width: 544px */
 @media (max-width: 34em) {
+	.padding-top-xl {
+		padding-top: 4rem !important;
+	}
+	.padding-bottom-xl {
+		padding-bottom: 4rem !important;
+	}
 	.container-xl {
 		justify-content: start;
 	}
@@ -334,7 +330,17 @@
 		row-gap: 4.8rem;
 	}
 	.contact-info {
-		gap: 1.6rem;
+		gap: 2.4rem
+	}
+	.contact-info p {
+		flex-direction: column;
+	}
+	.contact-info-description {
+		display: block;
+	}
+	.icon-contact {
+		width: 2rem;
+		height: 2rem;
 	}
 	.offert-box {
 		max-width: 100%;
@@ -409,6 +415,10 @@
 
 /* max-width: 448 */
 @media (max-width: 28em) {
+	.container-xl {
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
+	}
 }
 /* max-width: 385 */
 @media (max-width: 24em) {
