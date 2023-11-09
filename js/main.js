@@ -9,17 +9,21 @@ const header = document.querySelector('.header');
 const btnCloseNav = document.querySelector('.btn-menu-close');
 const btnMenuOpen = document.querySelector('.btn-menu-open');
 let imgIndex = 0;
-
+const allLinks = document.querySelectorAll('.nav-list-item');
+console.log(allLinks);
 // menu-nav
 btnMenuOpen.addEventListener('click', () => {
-	
 	header.classList.add('nav-open');
 });
 btnCloseNav.addEventListener('click', () => {
-	
 	header.classList.remove('nav-open');
 });
 
+allLinks.forEach(function (link) {
+	link.addEventListener('click', (e) => {
+		header.classList.remove('nav-open');
+	});
+});
 //gallery
 function closeGallery() {
 	lightbox.style.opacity = 0;

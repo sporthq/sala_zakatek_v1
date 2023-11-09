@@ -319,26 +319,13 @@
 		gap: 1.6rem;
 		padding-top: 3.2rem;
 	}
-	.nav-mobile {
-		position: fixed;
-		display: block;
-		top: 0;
-		left: 0;
-		padding: 10rem 0rem;
-		width: 70%;
-		height: 100vh;
-		max-height: 100%;
-		background-color: #ffffff;
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-		transform: translateX(-100%);
-		z-index: 13;
-		transition: opacity .3s, transform .3s;
-	}
+	
 
 	.nav-open .nav-mobile {
 		opacity: 1;
 		transform: translateX(0);
-
+		pointer-events: auto;
+		
 	}
 	.nav-list-mobile {
 		display: flex;
@@ -349,9 +336,10 @@
 		list-style: none;
 	}
 
+
+
 	.btn-mobile-nav {
 		position: absolute;
-	
 		top: 0rem;
 		display: block;
 		background: none;
@@ -365,6 +353,7 @@
 	}
 	.btn-menu-close {
 		right: -2rem;
+		
 	}
 
 	.btn-mobile-nav-icon {

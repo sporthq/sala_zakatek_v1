@@ -38,8 +38,22 @@
 	display: none;
 }
 .nav-mobile {
-	/* display: none; */
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 10rem 0rem;
+	width: 70%;
+	height: 100vh;
+	max-height: 100%;
+	background-color: #ffffff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+	z-index: 13;
+	transition: opacity 0.3s, transform 0.3s;
+	transform: translateX(-100%);
 	opacity: 0;
+	pointer-events: none;
+	
 }
 .contact-info {
 	display: flex;
