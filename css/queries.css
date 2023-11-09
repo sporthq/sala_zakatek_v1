@@ -317,7 +317,7 @@
 	}
 	.header {
 		gap: 1.6rem;
-		padding-top: 2.4rem;
+		padding-top: 3.2rem;
 	}
 	.nav-mobile {
 		position: fixed;
@@ -352,7 +352,7 @@
 	.btn-mobile-nav {
 		position: absolute;
 	
-		top: -1rem;
+		top: 0rem;
 		display: block;
 		background: none;
 		border: none;
