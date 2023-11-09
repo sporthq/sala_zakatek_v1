@@ -13,7 +13,6 @@ const footerBox = document.querySelector('.footer-box');
 const navMobile = document.querySelector('.nav-mobile');
 const sections = document.querySelectorAll('section[id]');
 
-
 //gallery
 let imgIndex = 0;
 function closeGallery() {
@@ -93,6 +92,7 @@ document.addEventListener('click', (e) => {
 const curYear = new Date().getFullYear();
 yearEl.textContent = curYear;
 
+const footerIconHome = document.querySelector('.footer-nav-mobile-link ');
 // menu-mobile-bottom
 document.addEventListener('scroll', function () {
 	if (scrollY > 37) {
@@ -108,9 +108,12 @@ function scrollActive() {
 		const sectionHeight = current.offsetHeight,
 			sectionTop = current.offsetTop - 50,
 			sectionId = current.getAttribute('id');
-			
 
-			console.log(scrollY);
+		if (scrollY > 906) {
+			footerIconHome.classList.remove('active-link');
+		} else {
+			footerIconHome.classList.add('active-link');
+		}
 		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 			document.querySelector('.footer-nav-mobile a[href*=' + sectionId + ']').classList.add('active-link');
 		} else {

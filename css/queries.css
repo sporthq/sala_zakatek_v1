@@ -195,7 +195,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
+
 		padding: 3.2rem 0 4.8rem;
 		letter-spacing: 2px;
 	}
@@ -342,6 +342,7 @@
 		border: none;
 		cursor: pointer;
 	}
+	
 
 	.btn-menu-open {
 		left: 0;
@@ -435,6 +436,7 @@
 		position: fixed;
 		bottom: 0;
 		left: 0;
+		
 		padding: 1.6rem 0;
 		width: 100%;
 		max-height: 7rem;
@@ -461,6 +463,11 @@
 		justify-content: center;
 		gap: 0.2rem;
 		text-decoration: none;
+	}
+	.footer-nav-mobile-link:focus {
+		/* outline: 1px solid var(--colorPrimaryLight); */
+		outline-offset: 5px;
+		/* box-shadow: none; */
 	}
 
 	.footer-nav-mobile--icon {
