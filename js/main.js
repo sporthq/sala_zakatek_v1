@@ -5,8 +5,22 @@ const arrLeft = document.querySelector('.arrow-left');
 const arrRight = document.querySelector('.arrow-right');
 const btnCloseGallery = document.querySelector('.close-lightbox');
 const yearEl = document.querySelector('.year');
+const header = document.querySelector('.header');
+const btnCloseNav = document.querySelector('.btn-menu-close');
+const btnMenuOpen = document.querySelector('.btn-menu-open');
 let imgIndex = 0;
 
+// menu-nav
+btnMenuOpen.addEventListener('click', () => {
+	
+	header.classList.add('nav-open');
+});
+btnCloseNav.addEventListener('click', () => {
+	
+	header.classList.remove('nav-open');
+});
+
+//gallery
 function closeGallery() {
 	lightbox.style.opacity = 0;
 	setTimeout(() => {

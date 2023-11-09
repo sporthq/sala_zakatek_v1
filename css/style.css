@@ -34,7 +34,13 @@
 .nav-list-item:active {
 	color: var(--colorPrimary);
 }
-
+.btn-mobile-nav {
+	display: none;
+}
+.nav-mobile {
+	/* display: none; */
+	opacity: 0;
+}
 .contact-info {
 	display: flex;
 	align-items: center;
@@ -497,7 +503,6 @@
 	align-self: start;
 	margin-top: 3.2rem;
 	justify-self: center;
-	
 }
 
 .footer-contact-heading {
