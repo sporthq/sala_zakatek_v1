@@ -1,4 +1,5 @@
-@import 'colors.css';
+
+
 
 /***************************/
 /* header */
@@ -38,7 +39,6 @@
 	display: none;
 }
 .nav-mobile {
-
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -53,7 +53,6 @@
 	transform: translateX(-100%);
 	opacity: 0;
 	pointer-events: none;
-	
 }
 .contact-info {
 	display: flex;
@@ -97,12 +96,9 @@
 	position: relative;
 	max-width: 173.6rem;
 	margin: 0 auto;
-
-
 }
 .hero-socials-box {
 	display: none;
-
 }
 .circle-box {
 	position: absolute;
@@ -178,7 +174,7 @@
 }
 
 .border-bottom-line {
-	background-color: var(--colorPrimary);
+	background-color: var(--colorPrimaryDark);
 	margin-top: auto;
 	height: 5px;
 	border: none;
@@ -453,13 +449,12 @@
 	padding: 14px 24px 15px 024px;
 	font-size: 1.6rem;
 	font-family: inherit;
-	border: 1px solid var(--colorGray)
+	border: 1px solid var(--colorGray);
 }
 .form-contact-input:focus,
 .form-contact-textarea:focus {
 	outline: none;
 	box-shadow: 0 5px 32px rgba(241, 124, 125, 0.17);
-	
 }
 .form-contact-textarea {
 	grid-column: 1/3;
@@ -565,3 +560,5 @@
 	display: none;
 	opacity: 0;
 }
+
+

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 @import 'colors.css';
 /*
 --- 01 TYPOGRAPHY SYSTEM
@@ -109,7 +109,7 @@ body {
 
 	font-size: 2.8rem;
 
-	color: var(--colorPrimary);
+	color: var(--colorPrimaryDark);
 	text-transform: uppercase;
 }
 
@@ -125,7 +125,7 @@ body {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	font-size: 4rem;
-	color: var(--colorPrimary);
+	color: var(--colorPrimaryDark);
 	text-transform: uppercase;
 }
 
