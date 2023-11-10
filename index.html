@@ -8,7 +8,7 @@
         content="Zaplanuj wyjątkową uroczystość w naszej sali weselnej. Skontaktuj się, aby uczynić swoje wydarzenie niezapomnianym!">
     <link rel="icon" href="img/favicons/favicon-64x64.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@
 
         </nav>
         <div class="circle-box">
-            <img src="./img/logo_sala.png" alt="">
+            <img media src="./img/logo_sala.png" alt="logo sali weselnej zakątek">
         </div>
 
 
@@ -78,7 +78,12 @@
                     <p><a class="hero-social-item" href="https://www.facebook.com/zakatekkozly/?locale=pl_PL"
                             target="_blank" rel="noreferrer noopener">FACEBOOK</a></p>
                 </div>
-                <img class="hero-img" src="./img/header_big_cut.jpg" alt="para młoda na przed kościołem">
+                <picture>
+                    <source srcset="./img/hero_small.jpg" media="(max-width: 53em)">
+                    <img loading="lazy" class="hero-img" srcset="./img/header_big_cut.jpg"
+                        alt="para młoda na przed kościołem">
+                </picture>
+
 
                 <div class="header-shadow"></div>
             </div>
