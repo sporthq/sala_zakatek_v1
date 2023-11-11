@@ -72,7 +72,6 @@ function cleanStuff(done) {
 }
 
 
-const mainFn = parallel(gulpCompile, jsCompile, convertImg);
 exports.cleanStuff = cleanStuff; 
-exports.default = series(mainFn);
+exports.default = series(gulpCompile, jsCompile, convertImg);
 
