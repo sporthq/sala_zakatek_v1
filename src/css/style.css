@@ -1,5 +1,4 @@
-
-
+@import 'colors.css';
 
 /***************************/
 /* header */
@@ -561,4 +560,19 @@
 	opacity: 0;
 }
 
+/***************************/
+/* error */
+/***************************/
+.error-section {
+	/* min-height: vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.
+.error-box h1 {
+	
+	font-size: 6.4rem;
+	color: var(--colorDarkGray);
+}
