@@ -11,8 +11,11 @@ const btnMenuOpen = document.querySelector('.btn-menu-open');
 const allLinks = document.querySelectorAll('.nav-list-item');
 const footerBox = document.querySelector('.footer-box');
 const navMobile = document.querySelector('.nav-mobile');
+const cookieBox = document.querySelector('.cookie-box');
+const cookieBtn = document.querySelector('.cookie-btn');
 const sections = document.querySelectorAll('section[id]');
 
+console.log(cookieBtn);
 //gallery
 let imgIndex = 0;
 function closeGallery() {
@@ -122,3 +125,19 @@ function scrollActive() {
 	});
 }
 window.addEventListener('scroll', scrollActive);
+
+function showCookie() {
+	const cookieLocalStorage = localStorage.getItem('cookie');
+
+	if (cookieLocalStorage) {
+		cookieBox.classList.add('hide-cookie');
+	}
+}
+
+const handleCookie = () => {
+	localStorage.setItem('cookie', 'true');
+	cookieBox.classList.add('hide-cookie');
+};
+
+cookieBtn.addEventListener('click', handleCookie);
+showCookie();
