@@ -503,7 +503,7 @@
 	}
 	.footer-nav-mobile-name {
 		font-size: 1.2rem;
-		color: var(--colorGray);
+		color: var(--colorPrimaryDark);
 		text-decoration: none;
 	}
 	.active-link .footer-nav-mobile--icon {
