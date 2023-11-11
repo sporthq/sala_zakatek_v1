@@ -112,7 +112,14 @@ body {
 	color: var(--colorPrimaryDark);
 	text-transform: uppercase;
 }
-
+.heading-primary {
+	
+	font-size: 8.2rem;
+	color: var(--colorDarkGray);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4.5px;
+}
 .heading-secondary {
 	margin-top: -1rem;
 	font-size: 7.4rem;
@@ -181,16 +188,14 @@ body {
 	width: 103%;
 	height: 103%;
 	background-color: var(--colorPrimary);
-
 	transform: translateY(-100%);
 	opacity: 0;
-
 	transition: transform 0.3s, opacity 0.3s;
 	z-index: -1;
 }
 
 .btn:hover::before {
-	opacity: 100%;
+	opacity: 1;
 	transform: translateY(0);
 }
 
@@ -207,4 +212,7 @@ body {
 
 .order-1 {
 	order: 1;
+}
+.heading-hidden {
+	display: none;
 }
