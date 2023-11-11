@@ -11,8 +11,8 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 
 const sourcemaps = require('gulp-sourcemaps');
-const browserSync = require('browser-sync').create();
-const reload = browserSync.reload;
+
+
 
 const paths = {
 	css: './src/css/*.css',
@@ -64,29 +64,15 @@ function convertImg(done) {
 	done();
 }
 
-function startBrowserSync(done) {
-	browserSync.init({
-		server: {
-			baseDir: './',
-		},
-	});
 
-	done();
-}
 function cleanStuff(done) {
 	src(paths.dist, { read: false }).pipe(clean());
 
 	done();
 }
 
-function watchForChanges(done) {
-	watch('./*.html').on('change', reload);
-	watch([paths.css, paths.js], parallel(gulpCompile, jsCompile)).on('change', reload);
-	watch(paths.img, convertImg).on('change', reload);
-	done();
-}
 
 const mainFn = parallel(gulpCompile, jsCompile, convertImg);
 exports.cleanStuff = cleanStuff; 
-exports.default = series(mainFn, startBrowserSync, watchForChanges);
+exports.default = series(mainFn);
 
