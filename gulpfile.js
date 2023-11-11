@@ -4,7 +4,7 @@ const cssnano = require('gulp-cssnano');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const clean = require('gulp-clean');
-const sortMediaQueries = require('postcss-sort-media-queries');
+
 const autoprefixer = require('autoprefixer');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
